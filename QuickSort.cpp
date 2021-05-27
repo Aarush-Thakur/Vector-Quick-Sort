@@ -12,7 +12,7 @@ int Partition(std::vector<int> &v, int low, int high)   //This function sorts th
                                                         //NOTE: THE PIVOT VARIABLE IS THE VALUE AT THE PIVOT ELEMENT
     int i = low - 1;                                    //in the first call to Partition(), i = -1
     int j = high + 1;                                   //in the first call to Partition(), j = highest element + 1
-    while(1)                                            //equivalent to while(true)
+    while(true)
     {
         while(v[++i] < pivot);                          //if value at element i + 1 < pivot, do nothing
         while(v[--j] > pivot);                          //if value at element i + 1 > pivot, do nothing
