@@ -14,8 +14,8 @@ int Partition(std::vector<int> &v, int low, int high)   //This function sorts th
     int j = high + 1;                                   //in the first call to Partition(), j = highest element + 1
     while(1)                                            //equivalent to while(true)
     {
-        while(v[++i] < pivot);                          //if value at the (i -eth element) + 1 < pivot, do nothing
-        while(v[--j] > pivot);                          //if value at the (j -eth element) + 1 > pivot, do nothing
+        while(v[++i] < pivot);                          //if value at element i + 1 < pivot, do nothing
+        while(v[--j] > pivot);                          //if value at element i + 1 > pivot, do nothing
                                                         //i and j are both pre incremented and decremented respectively
         if(i >= j)
             return j;
